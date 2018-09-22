@@ -1,8 +1,6 @@
 from weather import Weather, Unit
 import random
 
-### This is a test
-
 def weather(intake):
     weather = Weather(unit=Unit.CELSIUS)
     location = weather.lookup_by_location('Riddlesdown')
