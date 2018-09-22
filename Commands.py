@@ -1,4 +1,7 @@
 from weather import Weather, Unit
+import random
+
+### This is a test
 
 def weather(intake):
     weather = Weather(unit=Unit.CELSIUS)
@@ -22,4 +25,6 @@ def CalMul(intake):
     Numbers = [int(input("1st number = ")), int(input("2nd number = "))]
     print(Numbers[0] * Numbers[1])
         
-        
+
+    
+    
