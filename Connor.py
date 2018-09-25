@@ -4,12 +4,9 @@ import Commands
 intake = str(input(""))
 
 Calculator = ['calculator addition', 'calculator subtraction', 'calculator division' , 'calculator multiplication']
-Wh = 'what is the weather like?'
-Game = 'game'
-Time = 'what is the time?'
-Timer = 'set timer'
+Inputs = ['what is the weather like?', 'game' ,'what is the time?', 'set timer']
 
-if intake == Wh:
+if intake == Inputs[0]:
     Commands.weather(intake)
 if intake == Calculator[0]:
     Commands.CalAdd(intake)
@@ -19,10 +16,10 @@ if intake == Calculator[2]:
     Commands.CalDiv(intake)
 if intake == Calculator[3]:
     Commands.CalMul(intake)
-if intake == Game:
+if intake == Inputs[1]:
     Commands.Game()
-if intake == Time:
+if intake == Inputs[2]:
     Commands.Time()
-if intake == Timer:
+if intake == Inputs[3]:
     Commands.Timer()
 
