@@ -6,6 +6,8 @@ intake = str(input(""))
 Calculator = ['calculator addition', 'calculator subtraction', 'calculator division' , 'calculator multiplication']
 Wh = 'what is the weather like?'
 Game = 'game'
+Time = 'what is the time?'
+Timer = 'set timer'
 
 if intake == Wh:
     Commands.weather(intake)
@@ -19,3 +21,8 @@ if intake == Calculator[3]:
     Commands.CalMul(intake)
 if intake == Game:
     Commands.Game()
+if intake == Time:
+    Commands.Time()
+if intake == Timer:
+    Commands.Timer()
+

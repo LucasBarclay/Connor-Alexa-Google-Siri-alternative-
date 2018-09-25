@@ -1,5 +1,7 @@
 from weather import Weather, Unit
 import random
+import datetime
+import time
 
 def weather(intake):
     weather = Weather(unit=Unit.CELSIUS)
@@ -119,6 +121,27 @@ def Game():
     if choice == 5:
         Geography()
 
-    
-    
+def Time():
+    day = datetime.datetime.now()
+    print(day)
+
+def Timer():
+    Unit = input("What units will you use (seconds, minutes or hours)?")
+    if Unit == 'seconds':
+        Amount = input("How long are you timing for?")
+        time.sleep(int(Amount))
+        print("Times up!!!!!!!!")
+    if Unit == 'minutes':
+        Amount = input("How long are you timing for?")
+        Amount = int(Amount) * 60
+        time.sleep(int(Amount))
+        print("Times up!!!!!!!!")
+    if Unit == 'hours':
+        Amount = input("How long are you timing for?")
+        Amount = int(Amount) * 60
+        Amount = int(Amount) * 60
+        time.sleep(int(Amount))
+        print("Times up!!!!!!!!")
+
+
     
