@@ -1,3 +1,5 @@
+#! /usr/bin/env python3
+
 from weather import Weather, Unit
 import random
 import datetime
@@ -143,5 +145,3 @@ def Timer():
         time.sleep(int(Amount))
         print("Times up!!!!!!!!")
 
-
-    
