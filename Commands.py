@@ -4,6 +4,8 @@ from weather import Weather, Unit
 import random
 import datetime
 import time
+import pygame
+
 
 def weather(intake):
     weather = Weather(unit=Unit.CELSIUS)
@@ -145,3 +147,12 @@ def Timer():
         time.sleep(int(Amount))
         print("Times up!!!!!!!!")
 
+def Music():
+    music = input("Enter the name of the song and the type of file(.ogg)")
+    pygame.init()
+    song = pygame.mixer.Sound(music)
+    clock = pygame.time.Clock()
+    song.play()
+    while True:
+        clock.tick(60)
+    pygame.quit()

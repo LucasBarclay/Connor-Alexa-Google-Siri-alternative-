@@ -2,11 +2,12 @@
 
 from weather import Weather, Unit
 import Commands
+import pygame
 
 intake = str(input(""))
 
 Calculator = ['calculator addition', 'calculator subtraction', 'calculator division' , 'calculator multiplication']
-Inputs = ['what is the weather like?', 'game' ,'what is the time?', 'set timer']
+Inputs = ['what is the weather like?', 'game', 'what is the time?', 'set timer', 'play music']
 
 if intake == Inputs[0]:
     Commands.weather(intake)
@@ -24,4 +25,6 @@ if intake == Inputs[2]:
     Commands.Time()
 if intake == Inputs[3]:
     Commands.Timer()
+if intake == Inputs[4]:
+    Commands.Music()
 
